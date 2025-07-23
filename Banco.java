@@ -10,6 +10,14 @@ public class Banco {
     }
 
     void criarConta(String nome) {
+        listaDeContas.add(new Conta(nome));
+    }
 
+    void sacar(int conta, double valor) {
+        for(Conta a : listaDeContas){
+            if(a.getNumeroConta() == conta && valor < a.getSaldo()){
+                a.setSaldo(a.getSaldo()-valor);
+            }
+        }
     }
 }

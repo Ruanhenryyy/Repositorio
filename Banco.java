@@ -10,6 +10,10 @@ public class Banco {
     }
 
     void criarConta(String nome) {
+        listaDeContas.add(new Conta(nome));
+    }
+
+    void sacar(int conta, double valor) {
         
     }
 }

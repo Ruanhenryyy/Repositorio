@@ -20,4 +20,12 @@ public class Banco {
             }
         }
     }
+
+    void depositar(int conta, double valor){
+        for(Conta a : listaDeContas){
+            if(a.getNumeroConta() == conta && valor < a.getSaldo()){
+                a.setSaldo(a.getSaldo()+valor);
+            }
+        }
+    }
 }

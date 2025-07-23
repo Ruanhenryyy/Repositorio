@@ -28,4 +28,14 @@ public class Banco {
             }
         }
     }
+
+    public String mostrarInformacoes(int conta){
+        String nome = null;
+         for(Conta a : listaDeContas){
+            if(a.getNumeroConta() == conta){
+                nome = a.getNome();
+            }
+         }
+        return nome;
+    }
 }

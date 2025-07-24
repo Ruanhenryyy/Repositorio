@@ -16,3 +16,17 @@ Com o BoxBank é possível que o usuário faça algumas transações de básicas
 ## Como Rodar
 
 Para rodar o código é necessário que você realize o clone para um repositório local, depois abra o editor de código e abra o diretório do projeto.
+
+## Prints
+
+![Print 1](img/Captura%20de%20tela%202025-07-24%20103148.png)
+
+
+
+
+
+
+
+
+
+![Print 2](img/Captura%20de%20tela%202025-07-24%20103155.png)

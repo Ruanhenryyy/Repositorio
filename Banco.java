@@ -13,29 +13,37 @@ public class Banco {
         listaDeContas.add(new Conta(nome));
     }
 
-    void sacar(int conta, double valor) {
+    void sacar(String nome, double valor) {
         for(Conta a : listaDeContas){
-            if(a.getNumeroConta() == conta && valor < a.getSaldo()){
+            if(a.getNome().equalsIgnoreCase(nome) && valor < a.getSaldo()){
                 a.setSaldo(a.getSaldo()-valor);
             }
         }
     }
 
-    void depositar(int conta, double valor){
+    void depositar(String nome, double valor){
         for(Conta a : listaDeContas){
-            if(a.getNumeroConta() == conta && valor < a.getSaldo()){
+            if(a.getNome().equalsIgnoreCase(nome)){
                 a.setSaldo(a.getSaldo()+valor);
             }
         }
     }
 
-    public String mostrarInformacoes(int conta){
-        String nome = null;
+    public String mostrarInformacoes(String nome){
+        String nomemil = null;
          for(Conta a : listaDeContas){
-            if(a.getNumeroConta() == conta){
+            if(a.getNome().equalsIgnoreCase(nome)){
                 nome = a.getNome();
             }
          }
-        return nome;
+        return nomemil;
+    }
+
+    void mostrarSaldo(String nome){
+        for(Conta a : listaDeContas){
+            if(a.getNome().equalsIgnoreCase(nome)){
+                System.out.println(a.getSaldo());;
+            }
+        }
     }
 }

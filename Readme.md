@@ -1,6 +1,7 @@
 # Banco BoxBank _____________________________________________________
 
 Esse projeto foi desenvolvido com o intuito de prática para versionamento de código com git e exposição dos repositórios pelo github para construção de um portifólio profissional.
+
 Com o BoxBank é possível que o usuário faça algumas transações de básicas de deposito e saque, além de conseguir consultar informações sobre sua conta bancária.
 
 ## Autores
